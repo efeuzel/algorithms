@@ -16,5 +16,9 @@ public class Main {
         myArray = new int[] {7, 2, 5, 4, 3, 2, 1};
         Sorting.InsertionSort(myArray);
         System.out.println(Arrays.toString(myArray));
+
+        myArray = new int[] {7};
+        int pos = Searching.binarySearch(myArray, 7);
+        System.out.println(pos);
     }
 }
