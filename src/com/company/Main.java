@@ -20,5 +20,21 @@ public class Main {
         myArray = new int[] {7};
         int pos = Searching.binarySearch(myArray, 7);
         System.out.println(pos);
+
+        LinkedList list = new LinkedList();
+        list.insertAtHead(5);
+        list.insertAtHead(10);
+        list.insertAtHead(2);
+        list.insertAtHead(12);
+        list.insertAtHead(19);
+        list.insertAtHead(20);
+        System.out.println(list.toString());
+        System.out.println("list length is " + list.length());
+        list.deleteHeadNode();
+        System.out.println(list.toString());
+        System.out.println("list length is " + list.length());
+        System.out.println("Found " + list.find(12));
+        System.out.println("Found " + list.find(15));
+
     }
 }
