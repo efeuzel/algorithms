@@ -36,5 +36,27 @@ public class Main {
         System.out.println("Found " + list.find(12));
         System.out.println("Found " + list.find(15));
 
+        LinkedList sortedLL = new LinkedList();
+        sortedLL.insertAtHead(19);
+        sortedLL.insertAtHead(16);
+        sortedLL.insertAtHead(15);
+        sortedLL.insertAtHead(10);
+        sortedLL.insertAtHead(7);
+        sortedLL.insertAtHead(5);
+
+        System.out.println(sortedLL);
+        sortedLL.insertInPlaceSorted(new Node(17));
+        System.out.println(sortedLL);
+
+        System.out.println("DLL Ops");
+        DoublyLinkedList sortedDLL = new DoublyLinkedList();
+        sortedDLL.insertSorted(6);
+        sortedDLL.insertSorted(16);
+        sortedDLL.insertSorted(7);
+        sortedDLL.insertSorted(10);
+        sortedDLL.insertSorted(7);
+        sortedDLL.insertSorted(5);
+        System.out.println(sortedDLL);
+
     }
 }

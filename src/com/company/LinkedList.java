@@ -13,6 +13,16 @@ public class LinkedList {
         head = head.getNextNode();
     }
 
+    public void insertInPlaceSorted(Node n){
+        Node current = head;
+        while (current.getNextNode().getData() < n.getData()) {
+            current = current.getNextNode();
+        }
+        //next node's data is bigger now
+        n.setNextNode(current.getNextNode());
+        current.setNextNode(n);
+    }
+
     public Node find(int value) {
         Node current = head;
         while (current != null) {

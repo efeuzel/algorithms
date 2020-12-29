@@ -40,4 +40,6 @@ public class Sorting {
             input[j + 1] = tmp;
         }
     }
+
+    //todo insertion sort with doubly linked list.
 }
